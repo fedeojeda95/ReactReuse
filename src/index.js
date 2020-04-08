@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import SecretCode from './SecretCode';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SecretCode />
   </React.StrictMode>,
   document.getElementById('root'),
 );
