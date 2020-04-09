@@ -13,15 +13,27 @@ function SecretCodeGenerator({
 
   return (
     <SafeAreaView>
-      <View>
-        <Text>Secret Code Generator!</Text>
-        <Text>Value to generate secret code:</Text>
+      <View
+        style={{alignContent: 'center', justifyContent: 'center', margin: 15}}>
+        <Text style={{fontSize: 26, textAlign: 'center', marginBottom: 25}}>
+          Secret Code Generator!
+        </Text>
+        <Text style={{fontSize: 18, marginBottom: 15}}>
+          Value to generate secret code:
+        </Text>
         <TextInput
+          style={{
+            fontSize: 16,
+            marginBottom: 15,
+            borderBottomColor: 'black',
+            borderBottomWidth: 1,
+            marginRight: 40,
+          }}
           placeholder="write here your value.."
           value={keyword}
           onChangeText={valueHasChanged}
         />
-        <Text>
+        <Text style={{fontSize: 18, marginBottom: 15}}>
           {formIsValid
             ? `Secret code: ${secretCode}`
             : 'Write a text to see the secret text generated!'}

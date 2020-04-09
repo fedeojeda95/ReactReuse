@@ -6,10 +6,11 @@ function useSecretCodeGenerator() {
 
   function onKeywordChange(keyword) {
     if (keyword.length < 1) {
-      return 42;
+      setKeyword(keyword);
+      setSecretCode(42);
     }
 
-    const newSecretCode = keyword.length * 24 + 9 / 12;
+    const newSecretCode = (keyword.length * 24 + 9 / 12) % 7;
     setKeyword(keyword);
     setSecretCode(newSecretCode);
   }
