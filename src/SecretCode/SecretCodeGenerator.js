@@ -1,18 +1,17 @@
 import React from 'react';
-import SecretCodePresentation from './SecretCodePresentation';
 import useSecretCodeGenerator from '../hooks/useSecretCodeGenerator';
 
-function SecretCodeGenerator() {
+const secretCodeGenerator = (Presentation) => () => {
   const [secretCode, keyword, onKeywordChange] = useSecretCodeGenerator();
 
   return (
-    <SecretCodePresentation
+    <Presentation
       onKeywordChange={onKeywordChange}
       formIsValid={keyword.length > 0}
       secretCode={secretCode}
       keyword={keyword}
     />
   );
-}
+};
 
-export default SecretCodeGenerator;
+export default secretCodeGenerator;

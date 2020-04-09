@@ -1,3 +1,4 @@
-import SecretCode from './SecretCodeGenerator';
+import SecretCodeGenerator from './SecretCodeGenerator';
+import SecretCodePresentation from './SecretCodePresentation';
 
-export default SecretCode;
+export default SecretCodeGenerator(SecretCodePresentation);
