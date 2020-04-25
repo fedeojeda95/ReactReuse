@@ -1,18 +1,11 @@
 import React from 'react';
 import RepositoriesList from './RepositoriesList';
+import {Route} from 'react-router';
 
 export const flowNames = {
-  RepositoriesList: 'RepositoriesList',
+  RepositoriesList: '/repositories',
 };
 
-export default function Navigation(navigator) {
-  return (
-    <navigator.Screen
-      name={flowNames.RepositoriesList}
-      component={RepositoriesList}
-      options={{
-        title: 'Repositories',
-      }}
-    />
-  );
+export default function Navigation() {
+  return <Route path="/repositories" component={RepositoriesList} />;
 }

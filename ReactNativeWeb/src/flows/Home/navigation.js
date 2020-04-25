@@ -1,16 +1,12 @@
 import React from 'react';
 import Home from './Home';
 
+import {Route} from 'react-router';
+
 export const flowNames = {
   Home: 'Home',
 };
 
 export default function Navigation(navigator) {
-  return (
-    <navigator.Screen
-      name={flowNames.Home}
-      component={Home}
-      options={{headerShown: false}}
-    />
-  );
+  return <Route exact path="/" component={Home} />;
 }

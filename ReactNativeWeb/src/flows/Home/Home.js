@@ -1,14 +1,16 @@
 import React, {useCallback} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 
+import {useHistory} from 'react-router';
+
 import {FlowNames} from '../RepositoriesList';
 import styles from './styles';
 
-function Home(props) {
-  const {navigation} = props;
+function Home() {
+  const history = useHistory();
   const navigateToRepositoriesList = useCallback(
-    () => navigation.navigate(FlowNames.RepositoriesList),
-    [navigation],
+    () => history.push(FlowNames.RepositoriesList),
+    [history],
   );
 
   const title = (

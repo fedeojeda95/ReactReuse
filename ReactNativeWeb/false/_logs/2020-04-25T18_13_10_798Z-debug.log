@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Users/fedeojeda/.nvm/versions/node/v13.3.0/bin/node',
+1 verbose cli   '/Users/fedeojeda/.nvm/versions/node/v13.3.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'web-start',
+1 verbose cli   '--no-cache'
+1 verbose cli ]
+2 info using npm@6.13.1
+3 info using node@v13.3.0
+4 verbose run-script [ 'preweb-start', 'web-start', 'postweb-start' ]
+5 info lifecycle ReactNativeWeb@0.0.1~preweb-start: ReactNativeWeb@0.0.1
+6 info lifecycle ReactNativeWeb@0.0.1~web-start: ReactNativeWeb@0.0.1
+7 verbose lifecycle ReactNativeWeb@0.0.1~web-start: unsafe-perm in lifecycle true
+8 verbose lifecycle ReactNativeWeb@0.0.1~web-start: PATH: /Users/fedeojeda/.nvm/versions/node/v13.3.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/fedeojeda/Desktop/react-code-reuse/ReactReuse/ReactNativeWeb/node_modules/.bin:/Users/fedeojeda/.rvm/gems/ruby-2.6.3/bin:/Users/fedeojeda/.rvm/gems/ruby-2.6.3@global/bin:/Users/fedeojeda/.rvm/rubies/ruby-2.6.3/bin:/Users/fedeojeda/.pyenv/plugins/pyenv-virtualenv/shims:/Users/fedeojeda/.pyenv/shims:/Users/fedeojeda/.yarn/bin:/Users/fedeojeda/.config/yarn/global/node_modules/.bin:/Users/fedeojeda/.nvm/versions/node/v13.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/fedeojeda/Library/Android/sdk/tools:/Users/fedeojeda/Library/Android/sdk/platform-tools:/Users/fedeojeda/.rvm/bin
+9 verbose lifecycle ReactNativeWeb@0.0.1~web-start: CWD: /Users/fedeojeda/Desktop/react-code-reuse/ReactReuse/ReactNativeWeb
+10 silly lifecycle ReactNativeWeb@0.0.1~web-start: Args: [ '-c', 'react-scripts start' ]
+11 silly lifecycle ReactNativeWeb@0.0.1~web-start: Returned: code: 1  signal: null
+12 info lifecycle ReactNativeWeb@0.0.1~web-start: Failed to exec web-start script
+13 verbose stack Error: ReactNativeWeb@0.0.1 web-start: `react-scripts start`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/Users/fedeojeda/.nvm/versions/node/v13.3.0/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:219:5)
+13 verbose stack     at ChildProcess.<anonymous> (/Users/fedeojeda/.nvm/versions/node/v13.3.0/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:219:5)
+13 verbose stack     at maybeClose (internal/child_process.js:1027:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:285:5)
+14 verbose pkgid ReactNativeWeb@0.0.1
+15 verbose cwd /Users/fedeojeda/Desktop/react-code-reuse/ReactReuse/ReactNativeWeb
+16 verbose Darwin 19.0.0
+17 verbose argv "/Users/fedeojeda/.nvm/versions/node/v13.3.0/bin/node" "/Users/fedeojeda/.nvm/versions/node/v13.3.0/bin/npm" "run" "web-start" "--no-cache"
+18 verbose node v13.3.0
+19 verbose npm  v6.13.1
+20 error code ELIFECYCLE
+21 error errno 1
+22 error ReactNativeWeb@0.0.1 web-start: `react-scripts start`
+22 error Exit status 1
+23 error Failed at the ReactNativeWeb@0.0.1 web-start script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]

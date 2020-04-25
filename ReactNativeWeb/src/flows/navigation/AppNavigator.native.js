@@ -1,15 +1,15 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import {NativeRouter} from 'react-router-native';
 
 import HomeNavigation from '../Home';
 import RepositoriesNavigation from '../RepositoriesList';
 
 function Navigation() {
   return (
-    <BrowserRouter>
+    <NativeRouter>
       {HomeNavigation()}
       {RepositoriesNavigation()}
-    </BrowserRouter>
+    </NativeRouter>
   );
 }
 
