@@ -1,16 +1,17 @@
 import React, {useCallback} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 
-import {useHistory} from 'react-router';
+import useNavigator from '../../hooks/useNavigator';
 
 import {FlowNames} from '../RepositoriesList';
 import styles from './styles';
 
 function Home() {
-  const history = useHistory();
+  const {goTo} = useNavigator();
+
   const navigateToRepositoriesList = useCallback(
-    () => history.push(FlowNames.RepositoriesList),
-    [history],
+    () => goTo(FlowNames.RepositoriesList),
+    [goTo],
   );
 
   const title = (

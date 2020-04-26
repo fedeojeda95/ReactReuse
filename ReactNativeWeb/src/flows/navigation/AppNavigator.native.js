@@ -1,15 +1,20 @@
 import React from 'react';
-import {NativeRouter} from 'react-router-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
 import HomeNavigation from '../Home';
 import RepositoriesNavigation from '../RepositoriesList';
 
+const Stack = createStackNavigator();
+
 function Navigation() {
   return (
-    <NativeRouter>
-      {HomeNavigation()}
-      {RepositoriesNavigation()}
-    </NativeRouter>
+    <NavigationContainer>
+      <Stack.Navigator>
+        {HomeNavigation(Stack)}
+        {RepositoriesNavigation(Stack)}
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

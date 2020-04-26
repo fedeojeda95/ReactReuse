@@ -1,10 +1,7 @@
 import React from 'react';
-import RepositoriesList from './RepositoriesList';
 import {Route} from 'react-router';
 
-export const flowNames = {
-  RepositoriesList: '/repositories',
-};
+import RepositoriesList from '../RepositoriesList';
 
 export default function Navigation() {
   return <Route path="/repositories" component={RepositoriesList} />;

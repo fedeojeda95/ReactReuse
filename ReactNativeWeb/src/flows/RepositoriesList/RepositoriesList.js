@@ -7,7 +7,8 @@ import {
   StyleSheet,
   Platform,
 } from 'react-native';
-import {useHistory} from 'react-router';
+
+import useNavigator from '../../hooks/useNavigator';
 
 const styles = StyleSheet.create({
   backButton: {margin: 10, fontSize: 18, fontWeight: '200'},
@@ -15,13 +16,13 @@ const styles = StyleSheet.create({
 });
 
 function RepositoriesList() {
-  const history = useHistory();
+  const {goBack} = useNavigator();
   return (
     <SafeAreaView>
       <View>
         <TouchableOpacity
           onPress={() => {
-            history.goBack();
+            goBack();
           }}>
           <Text style={styles.backButton}>{'<- Back'}</Text>
         </TouchableOpacity>
